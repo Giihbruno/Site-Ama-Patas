@@ -1,0 +1,49 @@
+.navbar {
+    background-color: pink;
+    width: 100%;
+    height: 100px;
+
+    img {
+        width: 150px;
+        margin: 0px 0px 0px 90px;
+    }
+
+    .navbar-nav {
+        width: 80%;
+        margin: 0px 0px 0px 120px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        a {
+            font-family: "poppins";
+            font-size: 22px;
+            text-transform: uppercase;
+            transition: all 300ms ease-in;
+
+            &:hover {
+                background-color: #fcb1b1;
+                border-bottom: #ffffff;
+            }
+        }
+
+        button {
+            width: 95px;
+            height: 50px;
+            border: none;
+            background-color: rgba(222, 77, 101, 0.76);
+            color: white;
+            font-size: 25px;
+            font-weight: 500;
+            border-radius: 10px;
+            transition: all 300ms ease-in;
+
+            &:hover {
+                background-color: #e8e7e7;
+                color: rgba(222, 77, 101, 0.895);
+            }
+
+        }
+    }
+
+}

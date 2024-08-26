@@ -1,0 +1,76 @@
+.Slide {
+    position: relative;
+
+    .slider {
+        overflow-x: hidden;
+        width: 1000px;
+        border-radius: 20px;
+        scroll-behavior: smooth;
+
+        .content-slider {
+            display: flex;
+            width: fit-content;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+
+            img {
+                width: 1000px;
+                height: 600px;
+                object-fit: cover;
+            }
+        }
+        
+    }
+    button {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        border: none;
+        background-color: rgb(233, 146, 203);
+        color: whitesmoke;
+        position: absolute;
+        top: 50%;
+        cursor: pointer;
+
+        &:first-of-type {
+            left: 0;
+            transform: translate(-50%, -50%);
+        }
+
+        &:last-of-type {
+            right: 0;
+            transform: translate(50%, -50%);
+        }
+
+        &:hover {
+            background-color: rgb(211, 33, 149);
+        }
+
+        .fa-solid{
+            font-size: 28px;
+        }
+    }
+
+    .length-dots{
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translate(-50%, -750%);
+        display: flex;
+        gap: 10px;
+
+        .dot{
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #e8e7e7;
+            
+        }   
+        .current{
+            background:  rgba(241, 17, 54, 0.76);
+        }
+    }
+}
